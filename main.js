@@ -19,6 +19,13 @@ const glados = async () => {
         method: 'GET',
         headers: { ...common },
       }).then((r) => r.json())
+        return [
+        'Checkin OK',
+        `${checkin.message}`,
+        `本次签到获得积分：${Number(checkin.list[0].change)}`,
+        `当前账户积分总数：${Number(checkin.list[0].balance)}`,
+        `Left Days ${Number(status.data.leftDays)}`,
+      ]
       if (status?.code) throw new Error(status?.message)
       notice.push(
         'Checkin OK',
@@ -26,6 +33,11 @@ const glados = async () => {
         `Left Days ${Number(status?.data?.leftDays)}`
       )
     } catch (error) {
+      console.error(
+      '签到失败，请检查',
+      `${error}`,
+      `<${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}>`,
+    )
       notice.push(
         'Checkin Error',
         `${error}`,
