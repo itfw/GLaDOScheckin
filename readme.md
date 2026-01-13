@@ -17,6 +17,8 @@ GitHub Actions 实现 [GLaDOS][glados] 自动签到
 ## 高级功能
 
 1. 如有多个帐号, 可以写为多行 Secret `GLADOS`, 每行写一个 Cookie
+![Uploading image.png…]()
+
 
 1. 如需修改时间, 可以修改文件 [run.yml](.github/workflows/run.yml#L7) 中的 `cron` 参数, 格式可参考 [crontab]
 
