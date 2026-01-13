@@ -17,7 +17,8 @@ GitHub Actions 实现 [GLaDOS][glados] 自动签到
 ## 高级功能
 
 1. 如有多个帐号, 可以写为多行 Secret `GLADOS`, 每行写一个 Cookie
-https://private-user-images.githubusercontent.com/47891429/422682912-c2de60a4-85d5-4ba7-8a80-d63841511bf4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjgyNzMxMDAsIm5iZiI6MTc2ODI3MjgwMCwicGF0aCI6Ii80Nzg5MTQyOS80MjI2ODI5MTItYzJkZTYwYTQtODVkNS00YmE3LThhODAtZDYzODQxNTExYmY0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAxMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMTEzVDAyNTMyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRhY2RmYWZlOWJmNjA1ODZkZTI5NjBlZDJkNzJlOWNjNTgwNDAxN2NjOTIzNTA0MjJhNjVmMGI0M2ZkZjY5ZDMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.IHJbSDVNhRych04FAVLlk4tMwex0uTmE6LFjo-nNUPM
+<img width="2552" height="1544" alt="image" src="https://github.com/user-attachments/assets/ead20d84-6567-413d-9566-e04c560df0de" />
+
 
 
 1. 如需修改时间, 可以修改文件 [run.yml](.github/workflows/run.yml#L7) 中的 `cron` 参数, 格式可参考 [crontab]
